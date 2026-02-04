@@ -1,0 +1,31 @@
+def main():
+    print("Starting Code Challenge")
+    print('Enter an integer number 20 or greater > 20')
+    x=input()
+    x=int(x)
+    if x>20:
+        print('Your number 20 is a valid Integer 20 or greater.  Thanks')
+        print("Starting While Loop Print Count Variable")
+        print('The user input started as',x)
+        x=x/2
+        print('The current value of the user input after some math is',x)
+        print('The while loop has looped 1 time')
+        x=x/2
+        print('The current value of the user input after some math is',x)
+        print('The while loop has looped 2 time')
+        x=x/2
+        print('The current value of the user input after some math is',x)
+        print('The while loop has looped 3 time')
+        x=x/2
+        print('The current value of the user input after some math is',x)
+        print('The while loop has looped 4 time')
+        x=x/2
+        print('The current value of the user input after some math is',x)
+        print('The while loop has looped 5 time')
+
+   
+    
+    print("Ending While Loop")
+    print("Ending Code Challenge")
+
+main()
