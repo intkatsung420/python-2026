@@ -3,26 +3,17 @@ def main():
     print('Enter an integer number 20 or greater > 20')
     x=input()
     x=int(x)
-    while x>20:
-        print('Your number 20 is a valid Integer 20 or greater.  Thanks')
+    y=0
+    
+    while x > 1:
+        y=y+1
+        print('Your number',x, 'is a valid Integer 20 or greater.  Thanks')
         print("Starting While Loop Print Count Variable")
         print('The user input started as',x)
         x=x/2
         print('The current value of the user input after some math is',x)
-        print('The while loop has looped 1 time')
-        x=x/2
-        print('The current value of the user input after some math is',x)
-        print('The while loop has looped 2 time')
-        x=x/2
-        print('The current value of the user input after some math is',x)
-        print('The while loop has looped 3 time')
-        x=x/2
-        print('The current value of the user input after some math is',x)
-        print('The while loop has looped 4 time')
-        x=x/2
-        print('The current value of the user input after some math is',x)
-        print('The while loop has looped 5 time')
-
+        print('The while loop has looped y time')
+       
    
     
     print("Ending While Loop")
