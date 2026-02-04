@@ -1,0 +1,20 @@
+def main():
+    print("Starting Code Challenge")
+    x=input()
+    x=int(x)
+    print("Starting While Loop - Comparing User & Count Variable")
+    y=0
+    print(y)
+    while y<x:
+        y=y+1
+        print(y)
+    print('The User variable is equal to the count variable.')
+    print('User =',x)
+    print('Count =',y)
+    while y<10:
+        y=y+1
+        print(y)
+    print("Ending While Loop")
+    print("Ending Code Challenge")
+
+main()
