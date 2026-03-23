@@ -1,0 +1,30 @@
+from gpiozero import RGBLED
+from time import sleep
+
+right_eye_color = RGBLED(red="BOARD3", green="BOARD5", blue="BOARD7")
+left_eye_color = RGBLED(red="BOARD8", green="BOARD10", blue="BOARD12")
+
+def extract_features(command):
+    print(command)
+    extract_features = command["features"]
+    print(extract_features)
+    if("eyes" in extract_features):
+        print("found eyes")
+        eye_features = extract_features["eyes"]
+        eyes(eye_features)
+  
+def eyes(eye_command):
+    print(eye_command)
+    if("set_right_rgb_eye_color"):
+        print("Found set right eye color")
+        print( eye_command["set_right_rgb_eye_color"])
+        right_eye_color.color = eye_command["set_right_rgb_eye_color"]
+        print(right_eye)
+
+def main():
+    print("Starting program")
+    command = {"robot":"Clanker", "features":{"eyes":{"set_right_rgb_eye_color":(1,0,0)}}}
+    extract_features(command)
+    print("ending program")
+main()
+#right_eye.color=(1,1,1)
